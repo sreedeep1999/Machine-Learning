@@ -13,16 +13,12 @@ from sklearn import preprocessing
 #creating labelencoder
 le=preprocessing.LabelEncoder()
 # Converting string labels into numbers.
-weather_encoded=le.fit_transform(temp)
-label=le.fit_transform(play)
-print("weather:",weather_encoded)
-#converting string labels into numbers.
 weather_encoded=le.fit_transform(weather)
 print("weather:",weather_encoded)
 #converting string labels into numbers.
 temp_encoded=le.fit_transform(temp)
+print("temp:",temp_encoded)
 label=le.fit_transform(play)
-print("Temp:",temp_encoded)
 print("Play:",label)
 # Combing weather and temp into single list of tuples.
 features=list(zip(weather_encoded,temp_encoded))
