@@ -1,0 +1,18 @@
+
+import matplotlib
+from matplotlib import pyplot as pit
+import numpy as np
+import matplotlib
+import matplotlib.pyplot as pit
+from keras.datasets import fashion mnist
+(train_X,train_Y), (test_X,test_Y) = fashion_mnist.load_data()
+from keras.utils. np utils import to categorical
+%matplotlib inline
+print ('training data shape : train X.shape, train Y. shape)
+print ('testing data shape : ', test_X.shape, test_Y. shape)
+('Training data shape : ',(60000, 28, 28), (60000,))
+('Testing data shape : ',(10000, 28, 28), (10000,))
+classes = np.unique(trainY) 
+nClasses = len(classes)
+print('total number of outputs : nClasses)
+print('output classes : classes)
